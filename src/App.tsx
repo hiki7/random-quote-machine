@@ -42,9 +42,13 @@ function App() {
           style={{ color: randomColor, transition }}
         >
           <h2 id="text">
-            <FaQuoteLeft size="30" style={{ marginRight: "10px" }} />
+            <div style={{ marginRight: "10px" }}>
+              <FaQuoteLeft size="30" />
+            </div>
             {quote.quote}
-            <FaQuoteRight size="30" style={{ marginLeft: "10px" }} />
+            <div style={{ marginLeft: "10px" }}>
+              <FaQuoteRight size="30" />
+            </div>
           </h2>
           <h4 id="author">- {quote.author}</h4>
         </div>
